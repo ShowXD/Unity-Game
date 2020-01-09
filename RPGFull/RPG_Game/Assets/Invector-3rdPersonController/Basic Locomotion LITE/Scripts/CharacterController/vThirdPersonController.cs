@@ -39,11 +39,13 @@ namespace Invector.CharacterController
                 animator.CrossFadeInFixedTime("JumpMove", 0.2f);
         }
 
+        
         public virtual void RotateWithAnotherTransform(Transform referenceTransform)
         {
             var newRotation = new Vector3(transform.eulerAngles.x, referenceTransform.eulerAngles.y, transform.eulerAngles.z);
             transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(newRotation), strafeRotationSpeed * Time.fixedDeltaTime);
             targetRotation = transform.rotation;
         }
+        
     }
 }

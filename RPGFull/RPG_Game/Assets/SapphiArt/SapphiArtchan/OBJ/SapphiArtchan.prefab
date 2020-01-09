@@ -4315,8 +4315,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 463472}
-  - component: {fileID: 9590100}
-  - component: {fileID: 11415292}
+  - component: {fileID: 5367041511418335228}
+  - component: {fileID: 109096381527908219}
   m_Layer: 0
   m_Name: SapphiArtchan
   m_TagString: Untagged
@@ -4340,26 +4340,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &9590100
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 172388}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: c17302b294b179d45afeabff23af8b13, type: 3}
-  m_Controller: {fileID: 9100000, guid: 9bf82b2ef50339940a186ed20f4bcbb6, type: 2}
-  m_CullingMode: 1
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &11415292
+--- !u!114 &5367041511418335228
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4368,9 +4349,38 @@ MonoBehaviour:
   m_GameObject: {fileID: 172388}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ccb49676687917499386abab8234bd6, type: 3}
+  m_Script: {fileID: 11500000, guid: 164039bc4a79f8643bb5d9fd07d3453c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  parRun: RunSwitch
+  parJump: JumpSwitch
+  parAttack: AttackSwitch
+  parDead: DeadSwitch
+  countNeed: 10
+  countCurrent: 0
+  isDead: 0
+  hp: 100
+  character: {fileID: 463472}
+  animator: {fileID: 0}
+--- !u!95 &109096381527908219
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 172388}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c37ccd598a1016f4ea5c791f962592cf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &172742
 GameObject:
   m_ObjectHideFlags: 0
